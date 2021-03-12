@@ -38,10 +38,3 @@ outputs:
 runs:
   using: docker
   image: Dockerfile
-  env:
-    NEXT: "${{ input.next }}"
-    DOCKER_IMAGE: "${{ input.docker_image }}"
-    DOCKER_REGISTRY: "${{ input.docker_registry }}"
-    DOCKER_USERNAME: "${{ input.docker_registry_username }}"
-    DOCKER_PASSWORD: "${{ input.docker_registry_password }}"
-    PRE_RELEASE: ${{ input.pre_release }}
