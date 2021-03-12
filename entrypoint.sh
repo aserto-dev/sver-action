@@ -11,4 +11,4 @@ else
   version=$(/app/calc-version)
 fi
 
-echo "::set-output name=version::$version"
+echo "::set-output name=version::${version//$'\n'/'%0A'}"
