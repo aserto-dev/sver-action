@@ -1,4 +1,4 @@
-name: "Calc Version"
+name: "sver semantic version calculator"
 description: "Calculates semantic versions based on repository history."
 author: "Vlad Iovanov - Aserto.com"
 branding:
