@@ -22,7 +22,7 @@ jobs:
           registry: https://ghcr.io
           username: ${{ env.DOCKER_USERNAME }}
           password: ${{ env.DOCKER_PASSWORD }}
-      - uses: aserto-dev/calc-version-action@v0.0.6
+      - uses: aserto-dev/sver@v0.0.9
         name: Calculate Tags
         id: "sver"
         with:
