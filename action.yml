@@ -37,4 +37,5 @@ outputs:
     description: Calculated version of the repository.
 runs:
   using: docker
-  image: Dockerfile
+  image: docker://ghcr.io/aserto-dev/sver:1
+  entrypoint: /app/sver
