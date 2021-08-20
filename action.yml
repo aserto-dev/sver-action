@@ -13,11 +13,11 @@ inputs:
     description: "Registry server to connect to."
     required: false
     default: "https://registry-1.docker.io/"
-  docker_registry_username:
+  docker_username:
     description: "Username for the registry."
     required: false
     default: ""
-  docker_registry_password:
+  docker_password:
     description: "Password for the registry."
     required: false
     default: ""
