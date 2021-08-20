@@ -38,4 +38,4 @@ outputs:
 runs:
   using: docker
   image: docker://ghcr.io/aserto-dev/sver:1
-  entrypoint: /app/sver
+  entrypoint: /app/gh-action-entrypoint.sh
