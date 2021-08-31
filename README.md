@@ -28,8 +28,8 @@ jobs:
         with:
           docker_image: ${{ env.DOCKER_IMAGE }}
           docker_registry: "https://ghcr.io"
-          docker_registry_username: "env.DOCKER_USERNAME"
-          docker_registry_password: "env.DOCKER_PASSWORD"
+          docker_registry_username: ${{ env.DOCKER_USERNAME }}
+          docker_registry_password: ${{ env.DOCKER_PASSWORD }}
       - name: Push image to GitHub Container Registry
         run: |
           echo "${{ steps.sver.outputs.version }}" | \
