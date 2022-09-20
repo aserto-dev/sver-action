@@ -37,5 +37,5 @@ outputs:
     description: Calculated version of the repository.
 runs:
   using: docker
-  image: docker://ghcr.io/aserto-dev/sver:1
+  image: docker://ghcr.io/aserto-dev/sver:1.3.9
   entrypoint: /app/gh-action-entrypoint.sh
