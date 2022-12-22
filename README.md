@@ -15,14 +15,14 @@ Can output:
 jobs:
   build:
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Login to GitHub Packages Docker Registry
         uses: docker/login-action@v1
         with:
           registry: https://ghcr.io
           username: ${{ env.DOCKER_USERNAME }}
           password: ${{ env.DOCKER_PASSWORD }}
-      - uses: aserto-dev/sver@v0.0.9
+      - uses: aserto-dev/sver@v0
         name: Calculate Tags
         id: "sver"
         with:
